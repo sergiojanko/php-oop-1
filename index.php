@@ -36,8 +36,21 @@ $movie_2 = new Movie("La grande Bellezza", 2013, "dramma", "IT");
 </head>
 
 <body>
-    <?php echo var_dump($movie_1) ?>
-    <?php echo var_dump($movie_2) ?>
+    <ul>
+        <li><?php echo $movie_1->title ?></li>
+        <li><?php echo $movie_1->year ?></li>
+        <li><?php echo $movie_1->genre ?></li>
+        <li><?php echo $movie_1->language ?></li>
+    </ul>
+    <ul>
+        <li><?php echo $movie_2->title ?></li>
+        <li><?php echo $movie_2->year ?></li>
+        <li><?php echo $movie_2->genre ?></li>
+        <li><?php echo $movie_2->language ?></li>
+    </ul>
+
+    <?php echo $movie_1->getTitle() ?>
+
 </body>
 
 </html>
